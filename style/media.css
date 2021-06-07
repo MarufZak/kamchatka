@@ -1,3 +1,12 @@
+@media (min-width: 1360px) {
+    .source__img {
+        /* flex: 0 0 calc(100vw - (((100vw - 1360px) / 2 ) + ((1360px - 40px) * 0.5) + 20px)); */
+        flex: 0 0 calc(50vw - (0.9 - 0.5 ) * 1248px);
+        /* flex: 0 0 calc( 50vw - ( процент картинки - 0.5 ) * ширина контейнера); */
+    }
+}
+
+
 @media (max-width: 1300px) {
     .start__body {
         display: flex;
@@ -64,6 +73,53 @@
     .header__list.active {
         top: 0;
     }
+
+
+    .travel__body {
+        align-items: center;
+        width: 100%;
+    }
+    .travel__title,
+    .travel__text,
+    .travel__subtitle {
+        width: 100%;
+        text-align: center;
+    }
+    .travel__cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .travel__card {
+        margin-right: 0;
+        align-items: center;
+    }
+
+
+    .plane__cards {
+        justify-content: center;
+    }
+    .plane__content {
+        width: 100%;
+        text-align: center;
+    }
+    .plane__title,
+    .plane__text {
+        width: 100%;
+    }
+
+
+    .come__body {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .come__content,
+    .come__slider {
+        width: 100%;
+    }
+    .come__slide {
+        padding-right: 40%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -90,6 +146,16 @@
 
     .header {
         padding: 15px 0;
+    }
+
+    .plane__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .plane__card {
+        align-items: center;
+        margin-top: 10px;
     }
     
 }
